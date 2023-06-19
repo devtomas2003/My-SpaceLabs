@@ -1,0 +1,13 @@
+{
+  "name": "My SpaceLabs",
+  "short_name": "My SpaceLabs",
+  "theme_color": "#baf147",
+  "background_color": "#fff",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "icons": {
+    "src": "/app.svg",
+    "type": "image/svg+xml",
+    "sizes": "192x192"
+  }
+}
