@@ -1,11 +1,12 @@
 import { BsGear } from "react-icons/bs";
 import { FaSatelliteDish } from "react-icons/fa";
-import { TbFileEuro, TbDeviceAudioTape } from "react-icons/tb";
+import { TbFileEuro, TbDeviceAudioTape, TbExchange } from "react-icons/tb";
 import { BiWorld } from "react-icons/bi";
 import { HiOutlineClipboardList, HiOutlinePaperClip } from "react-icons/hi";
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowForward, IoMdHelpCircleOutline } from "react-icons/io";
 import { IoAddOutline } from "react-icons/io5";
-import { AiOutlineBell, AiOutlineControl } from "react-icons/ai";
+import { AiOutlineBell, AiOutlineControl, AiOutlineGift } from "react-icons/ai";
+import { CiDiscount1 } from "react-icons/ci";
 
 export default function Home(){
     return (
@@ -76,7 +77,7 @@ export default function Home(){
                     </div>
                 </div>
                 <h2 className="text-zinc-600 text-lg mt-2">O meu serviço</h2>
-                <div className="flex flex-col mt-2">
+                <div className="flex flex-col mt-2 bg-white">
                     <div className="flex items-center justify-between border-b border-t p-3">
                         <div className="flex items-center">
                             <HiOutlineClipboardList className="w-8 h-8 text-zinc-600" />
@@ -122,7 +123,41 @@ export default function Home(){
                     <p className="text-white text-3xl font-bold mt-3">Lunar 30GB</p>
                     <p className="text-white text-sm">Tipo: Pré-Pago</p>
                 </div>
+                <h2 className="text-zinc-600 text-lg mt-2">Explorar</h2>
+                <div className="mt-2">
+                    <img src="/campanha-verao.jpg" className="w-full rounded" title="CAMPAIGN_NAME" alt="CAMPAIGN_NAME" />
+                </div>
                 <h2 className="text-zinc-600 text-lg mt-2">Ofertas e Extras</h2>
+                <div className="flex flex-col mt-2 bg-white">
+                    <div className="flex items-center justify-between border-b border-t p-3">
+                        <div className="flex items-center">
+                            <CiDiscount1 className="w-8 h-8 text-zinc-600" />
+                            <p className="text-zinc-600 ml-1 text-lg">Codigo Promocional</p>
+                        </div>
+                        <IoIosArrowForward className="w-6 h-6 text-[#3e5bc7]" />
+                    </div>
+                    <div className="flex items-center justify-between border-b p-3">
+                        <div className="flex items-center">
+                            <AiOutlineGift className="w-8 h-8 text-zinc-600" />
+                            <p className="text-zinc-600 ml-1 text-lg">Ofertas do meu tarifário</p>
+                        </div>
+                        <IoIosArrowForward className="w-6 h-6 text-[#3e5bc7]" />
+                    </div>
+                    <div className="flex items-center justify-between border-b p-3">
+                        <div className="flex items-center">
+                            <TbExchange className="w-8 h-8 text-zinc-600" />
+                            <p className="text-zinc-600 ml-1 text-lg">SpacePoints</p>
+                        </div>
+                        <IoIosArrowForward className="w-6 h-6 text-[#3e5bc7]" />
+                    </div>
+                    <div className="flex items-center justify-between border-b p-3">
+                        <div className="flex items-center">
+                            <IoMdHelpCircleOutline className="w-8 h-8 text-zinc-600" />
+                            <p className="text-zinc-600 ml-1 text-lg">FAQs</p>
+                        </div>
+                        <IoIosArrowForward className="w-6 h-6 text-[#3e5bc7]" />
+                    </div>
+                </div>
             </div>
         </div>
     );
